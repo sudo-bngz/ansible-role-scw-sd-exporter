@@ -4,6 +4,14 @@
     state: directory
     mode: '0755'
 
+- name: Create environment file for scw-sd
+  copy:
+    dest: /etc/default/scw-sd
+    content: "ONLINE_API_TOKEN={{ scw_sd_token }}\n"
+    owner: root
+    group: root
+    mode: '0600'
+
 - name: Download scw-sd binary
   get_url:
     url: "{{ scw_sd_download_url }}"

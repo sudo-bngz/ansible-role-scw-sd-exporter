@@ -7,7 +7,7 @@ ExecStart={{ scw_sd_bin_dir }}/scw-sd
 Restart=always
 User=nobody
 Group=nogroup
-Environment=ONLINE_API_TOKEN={{ scw_sd_token }}
+EnvironmentFile=/etc/default/scw-sd
 WorkingDirectory=/
 
 [Install]
