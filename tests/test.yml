@@ -1,0 +1,6 @@
+- hosts: localhost
+  gather_facts: false
+  roles:
+    - role: scw_sd_exporter
+  vars:
+    scw_sd_token: DUMMY_TOKEN
