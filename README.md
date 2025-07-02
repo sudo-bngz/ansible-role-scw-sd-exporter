@@ -23,7 +23,7 @@ scw_sd_arch: "amd64"
 scw_sd_bin_dir: "/usr/local/bin"
 scw_sd_token: "{{ lookup('env', 'ONLINE_API_TOKEN') }}"
 scw_sd_download_url: "https://github.com/sudo-bngz/dedibox-sd/releases/download/{{ scw_sd_version }}/scw-sd-{{ scw_sd_os }}-{{ scw_sd_arch }}"
-````
+```
 
 ## Example Playbook
 
